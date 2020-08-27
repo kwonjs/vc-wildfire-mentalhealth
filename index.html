@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+<title>Linguistic Diversity &amp; Accessibility of Mental Health Services in Ventura County</title>
+    
+<style>
+    
+    body p, ul {
+        font-family: 'Noto Serif', serif;
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+    
+    body li {
+        padding-top: 3vh;
+    }
+    
+    header {
+        font-family: 'Noto Sans', sans-serif;
+    }
+    
+    body h1, h2, h3, h4, h5 {
+        font-family: 'Noto Sans', sans-serif;
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+    
+    .jumbotron {
+        background-color:aliceblue;
+        background-position: center; 
+    }
+    
+    #bottom {
+        background-color: aliceblue;
+        text-align: center;
+        padding: 10vh;
+    }
+    
+    /*for ArcGIS map*/
+    .embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
+    /*end of style for ArcGIS map*/
+    
+</style>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+    
+<header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5" style = "text-align:center;">Linguistic Diversity &amp; Accessibility of Mental Health Services in Ventura County</h1>
+            <h5 style = "text-align:center;"><i>in relation to the Woolsey Fire</i></h5>
+            <hr class="my-4">
+            <p style = "text-align:center;">Spring 2020 · Human Rights Investigations Lab @ UC Berkeley</p>
+        </div>
+    </div>
+</header>
+
+<body>
+    
+    <h3 style = "text-align: center; padding-bottom: 3vh;">Important note</h3>
+    
+    <p style = "text-align: center;">I am not local to or from Ventura County. I myself have never endured wildfires and the long-term trauma that comes with recovering from wildfires that happen seasonally. The following information is from an outsider's perspective. Because of these facts, the information below will inherently be surface-level and non-comprehensive and meant to be treated as such. </p>
+    
+    <h4 style = "text-align: center; padding: 3vh;">Background</h4>
+    
+    <p>Linguistic diversity and the broader topic of the accessibility of mental health services is an important and under are under-discussed aspects of mental healthcare. Whether it is doctors soothing and <a href = "https://www.nytimes.com/2020/05/02/opinion/sunday/young-doctor-coronavirus.html">reassuring COVID-19 patients</a> in their native languages during one-on-one visits or physicians struggling to communicate with non-English speaking COVID-19 patients because centers <a href = "https://www.usnews.com/news/healthiest-communities/articles/2020-04-16/language-access-problems-a-barrier-during-covid-19-pandemic">lack medical language interpreters</a>, it is undeniable that language not only matters in mental healthcare provision but also often severely impacts mental healthcare quality.</p>
+    
+    <p> In the aftermath of a tragic event, ensuring that victims have access to quality mental healthcare is even more crucial. Before the current difficult times of the COVID-19 pandemic, Ventura County, California, was struck in November 2018 with both the Thousand Oaks mass shooting and the Hill-Woolsey Fire, one of the 2018 California wildfires that affected both LA and Ventura Counties that wasn’t contained until January 2019. The Hill-Woolsey Fire happened not even a year after the Thomas Fire, which affected Ventura and Santa Barbara Counties. </p>
+    
+    <p> Survivors of wildfires struggle with <a href = "https://www.npr.org/sections/health-shots/2018/08/05/635475707/wildfire-trauma-revisited">symptoms of trauma</a>, such as mood changes, sleeplessness, nightmares, irritability, and loss of appetite, even months or years after the trauma-inducing incident. Marginalized community members such as people of color, womxn, queer/trans folx, and disabled community members, are much more likely to experience psychological long-lasting trauma due to possible job, housing, or community loss post-wildfire along with difficulty navigating social welfare systems and combating day-to-day microaggressions and racism. Not being able to receive mental healthcare by a provider who speaks the patient’s native language and empathizes with the patient’s struggles can actually be detrimental to the patient who already is burdened by many of the aforementioned struggles. </p>
+    
+    <h4 style = "text-align: center; padding: 3vh;">Initial Analysis of Linguistic Diversity and Accessibility of MediCal-Provided Mental Healthcare in Ventura County</h4>
+    
+    <p>I attempted to assess whether the Hill-Woolsey Fire specifically had an impact on Ventura County - a county that had endured multiple trauma-inducing events in a short period of time - from a linguistic lens by mapping all Medi-Cal (California’s version of Medicaid) accepting mental health facilities listed by the Ventura County Behavioral Health Department from <a href = "http://www.vchca.org/images/BH/PDF/general_resources/Guide_to_Mental_Health_SvcsProvider_List_Included-EnglishBiggerFont.pdf">2017</a>, <a href = "http://www.vchca.org/images/BH/PDF/qa/ClinicAddress/GuidetoMentalHealthSrv.pdf">2018</a>, and <a href = "https://vcbh.org/images/2020-02-20_VCBH_Medi-Cal_Provider_Directory-SM.pdf">2020</a> (a directory from 2019 wasn’t publicly available) and color-coded each mental health facility based on the number of and what languages each provided.</p> 
+
+    <h5 style = "text-align:center; padding: 3vh 5vh;"> MediCal-Accepting Mental Health Facilities in Ventura County
+    </h5>
+
+    <!--ArcGIS map-->    
+
+    <div class="embed-container">
+        <small><a href="//cal.maps.arcgis.com/apps/Embed/index.html?webmap=f736582daea74761ac87c9c5188ad181&extent=-127.2146,30.0996,-111.4383,41.0728&home=true&zoom=true&scale=true&legend=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Medi-Cal Accepting Mental Health Facilities in Ventura County" src="//cal.maps.arcgis.com/apps/Embed/index.html?webmap=f736582daea74761ac87c9c5188ad181&extent=-127.2146,30.0996,-111.4383,41.0728&home=true&zoom=true&previewImage=false&scale=true&legend=true&disable_scroll=true&theme=light"></iframe>
+
+    </div>
+
+    <!--end of ArcGIS map--> 
+    
+    <p style = "text-align: center;"><i>If the above map doesn't load, <a href = "https://arcg.is/1PiemC0">click here</a> to go to the map!</i></p>
+    
+    <p style = "padding-top: 5vh;">There were many discrepancies in the datasets: there wasn’t a clear distinction between linguistic-specific services from culturally-competent services (with usage of vague phrases such as “Immigrant Spanish” and “Indigenous” - terms that are particularly unhelpful considering there are hundreds of different indigenous languages (i.e. the Mixtec language group, spoken by half a million people, contains several dialects)), there was a huge shift in data collection from linguistic capability of an entire facility (2017, 2018) to linguistic capability of each staff member within each facility (2020), and mental health facilities were listed far beyond Ventura County, some even as far as one in Stanislaus County, near Modesto, CA (2017, 2018).</p>
+    
+    <p>Despite these discrepancies, however, it was tempting to conclude that because there was an increase in languages offered from 2017 to 2020 in these Medi-Cal accepting mental health facilities and because facility locations were outside the Woolsey Fire perimeter, the quality of mental healthcare linguistically and geospatially for low-income folx wasn’t visibly impacted by the fire: a dangerous and most likely inaccurate conclusion from a visualization that relied on little, semi-inconsistent data. This visualization also didn’t plot all other mental health facilities that didn’t accept Medi-Cal but might have been destroyed or damaged by the fire.</p> 
+    
+    <p>Moreover, this visualization didn’t answer the question on <strong>whether linguistically and culturally-appropriate mental health care was being served to communities that needed it the most </strong> after the Woolsey Fire.</p>
+    
+    <p>Thus, rather than measuring the number of languages spoken at Medi-Cal accepting mental health facilities and making broad assumptions on the quality of mental health care in Ventura County as a whole and the impact it received post-Woolsey fire using this narrow, highly-specific and isolated indicator, I decided it was more worthwhile to <strong>look through Ventura County’s mental health needs assessments</strong> and outline the mental health care delivery structure specific to disaster relief and long-term recovery that various Ventura County organizations are spearheading.</p>
+    
+    <h4 style = "text-align: center; padding: 3vh;">Observations from Ventura County's Needs Assessments in 2019</h4> 
+
+    <p>Interestingly, while there was no public directory of Medi-Cal accepting mental health facilities released for 2019, there were many needs assessments conducted by Ventura County healthcare providers in 2019 that provided the following takeaways:</p>
+    
+    <ul>
+        <li>There is a clear correlation between <a href = "https://www.dignityhealth.org/-/media/cm/media/documents/Implementation-Strategies/2019/StJohnsRegionalPVHCHISFINALFY19.ashx?la=en&hash=7C3B93B0143FB823F125CA15E00F29F5D54A88E2">socioeconomic index</a> and the <a href = "http://www.vchca.org/images/public_health/PH_CHA_Booklet_DIGITAL_2017_2.pdf">percentage of non-English-speaking population</a>: the same zip codes that had the highest percentages of Spanish-speaking households, such as those in Oxnard and Port Hueneme, were also the zip codes that had the highest socioeconomic needs and would be most likely to suffer the most severe impact from trauma-inducing events such as a wildfire or mass shooting. Zip codes in cities like Somis and Fillmore saw even either a reduction in Medi-Cal accepting mental health facilities or a consistent dearth in those facilities, with the nearest facility being miles away that would require either a car or public transportation to get to.</li>
+        <li>After Spanish, the <a href = "https://vcbh.org/images/VCBH_CMHNA_Report_FINAL_-_2019-03-29_for_VCBH.pdf">next highest non-English language</a> spoken in Ventura County among respondents was Mixtec (2.3%). Services in languages less spoken like Tagalog, Persian, or Arabic, were offered at several Medi-Cal mental health facilities but services in Mixtec were either not offered or not clearly outlined in directories from 2017, 2018, or 2020. </li>
+        <li>Mixteco survey participants pointed out this lack of indigenous, Mixtec-specific mental healthcare and advised “providing support groups” and “staffing more providers that speak Mexican indigenous languages or that have lived experience with mental illness” as ways to improve current mental health services. Many wished for a designated community member who spoke the same language who would understand and had “gone through similar things” in order to feel supported.</li>
+        <li>The cultural competency of mental healthcare practitioners was considered “good or excellent” by less than half of all participants, and only 37% of participants agreed that there were “materials or services provided in multiple languages.”</li>
+        <li>Support/emotional/talk groups that foster interpersonal connection and open discussion and conversation were mentioned by wildfire survivors of all socioeconomic and cultural backgrounds as significant ways they coped post-Woolsey fire. Non-English-speaking and other marginalized community members would benefit from these groups even more since the existing healthcare systems don’t provide enough linguistically and culturally-competent services, staff, and materials for them to trust or rely on. </li>
+    </ul>
+    
+    <h4 style = "text-align: center; padding: 3vh;">Ventura County’s Current Plan for Long-Term Disaster Recovery/Relief: Mental Health Services</h4>
+    
+    <p>What is Ventura County already doing on the local and county-level for long-term disaster recovery and relief in the form of mental and behavioral health services? One coalition of <a href = "https://drive.google.com/drive/u/0/folders/15AZtTO_oueFaALYB8bzpzm3sp_-W5DAc">government and community organizations</a> working to provide long-term disaster recovery relief is the <a href = "https://www.vcdisasterrecoverygroup.org/">Ventura County Long Term Disaster Recovery Group</a>, or VCLTDRG. VCLTDRG is different from <a href = "https://www.venturacountyrecovers.org">Ventura County Recovers</a>, a website that gives updates and resources to survivors that are related directly to short-term disaster recovery, such as house rebuilding)<a href = "#footnote1">(1)</a>. This coalition aids community members with unmet disaster caused needs through “disaster case management” and seeks “to provide spiritual, emotional, physical and financial resources to those affected by the disaster.” As of “24 months post-Thomas Fire and 12 months post-Woolsey &amp; Hill Fires,” this coalition claims to have served 1,159 total households, with 105 open cases. This claim becomes very impressive when considering that the Woolsey Fire <a href = "https://www.fire.lacounty.gov/woolsey-fire-incident/">destroyed 1,643 structures</a> and damaged 364 structures. </p>
+    
+    <p>Last November, VCLTDRG met to discuss a <a href = "https://drive.google.com/drive/u/0/folders/15AZtTO_oueFaALYB8bzpzm3sp_-W5DAc">“Mental Health After Disaster Strategy</a>.” When discussing the needs of wildfire survivors, organization representatives responded overwhelmingly with discussion about inclusive access, pointing out the lack of language services (Spanish, Indigenous Language) and access and difficulty in building trust and bridges with the communities they didn’t belong to <a href = "#footnote2">(2)</a>, mentioning that Spanish speaking women without citizenship are a vulnerable population, and concluding that communities of color as a whole deserve mental health access to resources. Attendees, particularly <a href = "https://mixteco.org/mixtecs/">Mixteco</a>-identifying ones, echoed prior observations noted in the mental health needs assessment and emphasized the importance of storytelling and listening groups, two vital elements of counseling that rely on good communication in one’s native language. Having these bonds and this community was incredibly important considering that Mixtecos “face exploitation and discrimination in labor, housing, and everyday life” partly because most are “illiterate” and speak “only their native language, Mixteco.”</p>
+    
+    <p>Other programs already being carried out include the helpline <a href = "https://211ventura.org/disaster-resources/">211</a>, run by Interface Children and Family Services (a VCLTDRG member) and established as the go-to helpline for resources on multiple recovery-focused websites including Ventura County Recovers. Community members can either access this helpline via phone (only bilingual services are provided) or via the <a href = "https://icfs.communityos.org/gethelpventuracounty">website</a>, where they can fill out an intake form in <a href = "https://icfs.communityos.org/gethelpventuracounty">English</a> and in <a href = "https://icfs.communityos.org/gethelpventuracounty#googtrans(es)">Spanish</a>. Another program designed to help wildfire survivors in Ventura County is the The <a href = "www.oesnews.com/help-available-for-survivors-of-california-2018-fire-disasters/">Disaster Case Management Program (DCMP)</a>, a federally-run program spearheaded by  Catholic Charities (another VCLTDRG meeting attendee) where “trained case managers can help disaster survivors find assistance with food, clothing, health care, employment and more.” However, this program is designed to only be two years long, and trauma and other consequences from events like wildfires can last much longer than two years. </p>
+    
+    <h4 style = "text-align: center; padding: 3vh;">Takeaways &amp; Additional Notes</h4>
+    
+    <ul>
+        <li>While it is important to acknowledge that linguistic accessibility is only one out of many healthcare quality indicators and not always the best measure to assess quality of mental health care or determine whether the mental health needs of the surrounding communities are being met, language heavily impacts the quality of mental healthcare. Providing linguistically and culturally-appropriate mental health care is crucial especially for communities impacted by multiple trauma-inducing events, such as those in Ventura County.</li> 
+        <li>However, visually investigating whether mental health facility locations have changed and whether linguistic diversity in services has increased in those facilities pre and post-Woolsey Fire through public datasets is an inadequate assessment to determine quality of mental healthcare services in Ventura County.</li>
+        <li>“Culturally appropriate services” and “lack of services in preferred language” aren’t the top barriers to accessing care in Ventura County but are nevertheless urgent community mental health needs to address, especially for marginalized folx such as low-income Mixtec community members.</li>
+        <li>Disaster recovery-focused coalitions and programs can readily identify these needs, but it is still unclear as to whether the language needs of socioeconomically and linguistically marginalized communities can be met with current infrastructure.</li>
+        <li>Having coalitions like VCLTDRG and a go-to helpline are good starts but not enough. There is still much room for Ventura County to improve the accessibility of its long-term disaster recovery mental health resources and mental healthcare infrastructure as a whole.</li>
+        <li>Much of mental health recovery assistance relies on getting information off of websites, where healthcare providers provide intake forms and instructions or <a href = "https://findtreatment.samhsa.gov/locator">maps</a> on how to access healthcare. This requires not only the necessary technology but also the knowledge of whatever languages the websites use. Not understanding the information about one’s own health condition and undergoing additional stress in trying to interpret crucial, often life-saving information are barriers that prevent non-English or even non-English and non-Spanish-speaking community members from maintaining and improving their health that need to be addressed. 
+        </li>
+    </ul>
+    
+    <h5 style = "padding-top: 3vh; padding-bottom: 3vh;">Footnotes</h5>
+    
+    <p id = "footnote1" style = "font-size: 0.8em;">(1) It should be noted that neither Ventura County Recovers or the Ventura County Recovers <a href = "https://thomasfire.venturacountyrecovers.org/">specific to the Thomas Fire</a> mention any other <a href = "https://www.venturacountyrecovers.org/category/health-issues/">health issues</a> outside ones that are environmental-based or elicit physical symptoms, such as debris-cleanup, the impact of smoke on health, and impact of nutrition on health. It would be beneficial to provide a one-stop-shop website for all survivors by combining the websites “venturacountyrecovers” and “vcdisasterrecoverygroup” to prevent confusion.  </p>
+    
+    <p id = "footnote2" style = "font-size: 0.8em; padding-bottom: 5vh;">(2) It is ironic that despite the coalition’s realization that language access needs to be a priority, the website of VCLTDRG only includes one or two Spanish pages with a <a href = "https://www.vcdisasterrecoverygroup.org/como-acceder-a-los-recursos-y-asistencia-del-vc-ltrg/">link</a> that directs you back to the triaging station 211 to be assisted further and no other translations in any other language.</p>
+    
+    <div id = "bottom"><i>made with love by <a href = "https://github.com/kwonjs">kwon.js</a></i></div>
+    
+</body>
+
+
+</html>
